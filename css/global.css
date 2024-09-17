@@ -222,6 +222,14 @@ footer .social-icon img {
     margin-bottom: 15px;
 }
 
+.navigation-arrows-index {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 109rem;
+}
+
 .arrow {
     text-decoration: none;
     font-size: 1.5rem; 
