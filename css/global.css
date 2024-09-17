@@ -119,12 +119,22 @@ nav ul li a:hover {
 }
 
 .contact-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Garante que os itens fiquem um embaixo do outro em telas pequenas */
     margin: 20px;
     text-align: center;
 }
 
+.map-container, 
+.form-block {
+    flex: 1;
+    margin: 20px;
+}
+
 .map-container img {
-    width: 500px;
+    width: 100%;
     height: auto;
     display: block;
     margin: 0 auto 10px;
@@ -143,8 +153,7 @@ nav ul li a:hover {
 }
 
 .contact-form {
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 100%;
     text-align: left;
 }
 
@@ -192,9 +201,8 @@ nav ul li a:hover {
     border: 2px solid #ff7043; 
     padding: 30px; 
     border-radius: 10px; 
-    max-width: 600px; 
-    margin: 0 auto; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
 }
 
 footer {
@@ -250,5 +258,10 @@ footer .social-icon img {
 .menu-list h3 {
     font-size: 40px;
     border-bottom: 2px solid #2e7d32;
+}
+.logo-circle {
+    max-width: 10rem;
+    max-height:10rem;
+    border-radius: 50%;
 }
 
