@@ -153,15 +153,9 @@ nav ul li a:hover {
 }
 
 .contact-form {
-    max-width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
     text-align: left;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 18px;
-    color: #333;
 }
 
 .contact-form input,
@@ -204,6 +198,19 @@ nav ul li a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     flex: 1;
 }
+
+.contact-section {
+    display: block; /* Garante que todos os elementos dentro dessa seção fiquem em bloco */
+    width: 100%; /* Ajusta a largura para que o conteúdo ocupe toda a linha */
+}
+
+.map-container, .form-block {
+    width: 50%; /* Garante que os blocos de mapa e formulário ocupem 100% da largura disponível */
+    margin-bottom: 20px; /* Adiciona espaçamento entre os elementos */
+    margin-left: 26rem;
+
+}
+
 
 footer {
     display: flex;
