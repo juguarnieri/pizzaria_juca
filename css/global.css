@@ -142,6 +142,11 @@ nav ul li a:hover {
     height: 100px;
     margin-right: 15px;
     border-radius: 10px;
+    transition: transform 0.3s ease-in-out; 
+
+}
+.menu-img:hover {
+    transform: scale(1.1);
 }
 
 .menu-block {
@@ -246,43 +251,9 @@ nav ul li a:hover {
     font-weight: 500;
     text-align: center;
 }
-.map-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.map-container a {
-    display: inline-block;
-    font-size: 18px;
-    color: #b71c1c;
-    text-decoration: none;
-    margin-bottom: 10px;
-}
-
 .map-container a:hover {
     text-decoration: underline;
     color: #d32f2f;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    background-color: #b71c1c; 
-    padding: 10px 0;
-}
-
-footer .social-icon {
-    margin: 0 10px;
-}
-
-footer .social-icon img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
 }
 
 /* Estilo para setas de navegação */
@@ -353,5 +324,26 @@ footer .social-icon img {
     margin: 20px auto; 
     max-width: 800px; 
 }
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 20px; /* Espaçamento acima do rodapé */
+    flex-direction: column;
+    background-color: #b71c1c; 
+}
 
+footer p{
+    color: #f0f0f0;
+    font-size: 1.1rem;
+}
 
+footer .social-icon {
+    margin: 0 10px;
+}
+
+footer .social-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5%;
+}
