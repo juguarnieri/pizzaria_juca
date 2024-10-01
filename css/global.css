@@ -94,6 +94,7 @@ nav ul li a:hover {
 .imagem img {
     height: 60rem;
     margin-top: -40px;
+    display: flex;
 }
 
 .descricao {
@@ -328,7 +329,7 @@ footer {
     text-align: center;
     padding: 20px;
     color: white;
-    margin-top: 20px; /* Espaçamento acima do rodapé */
+    margin-top: 20px;
     flex-direction: column;
     background-color: #b71c1c; 
 }
@@ -346,4 +347,76 @@ footer .social-icon img {
     width: 40px;
     height: 40px;
     border-radius: 5%;
+}
+
+/* Para telas menores que 1200px (até 788px também) */
+@media (max-width: 1500px) {
+    .responsive-image {
+        display: none; /* Esconde a segunda imagem */
+    }
+}
+
+/* Para telas menores que 768px */
+@media (max-width: 1124px) {
+    header {
+        padding: 10px;
+        font-size: 16px;
+    }
+    nav ul li a {
+        font-size: 1rem;
+    }
+    nav ul {
+        align-items: center; 
+        flex-direction: column;
+    }
+
+    #home h1, #contato h1, #menu h1 {
+        font-size: 4em;
+    }
+
+    #home p, #contato p, #menu p {
+        font-size: 1.1em;
+    }
+
+    .fixed-image {
+        width: 80px;
+        height: 80px;
+        top: 10px;
+        left: 20px;
+    }
+}
+
+/* Para telas menores que 480px (500px incluído) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .telaindex{
+        width: 80px;
+        height: 80px;
+        top: 10px;
+        left: 20px;
+    }
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    nav ul li {
+        margin: 5px 0; 
+    }
+
+    #home h1, #contato h1, #menu h1 {
+        font-size: 3em;
+    }
+
+    #home p, #contato p, #menu p {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
 }
