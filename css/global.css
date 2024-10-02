@@ -82,6 +82,7 @@ nav ul li a:hover {
 .imagem img {
     height: 60rem;
     margin-top: -40px;
+    display: flex;
 }
 .descricao {
     text-align: center;
@@ -174,13 +175,9 @@ nav ul li a:hover {
     font-weight: 500;
     text-align: center;
 }
-.map-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.map-container a:hover {
+    text-decoration: underline;
+    color: #d32f2f;
 }
 .map-container a {
     display: inline-block;
@@ -189,10 +186,7 @@ nav ul li a:hover {
     text-decoration: none;
     margin-bottom: 10px;
 }
-.map-container a:hover {
-    text-decoration: underline;
-    color: #d32f2f;
-}
+=======
 footer {
     display: flex;
     justify-content: center;
@@ -207,7 +201,7 @@ footer .social-icon img {
     height: 40px;
     border-radius: 50%;
 }
-
+=======
 /* Estilo para setas de navegação */
 .navigation-arrows {
     display: flex;
@@ -270,9 +264,20 @@ footer .social-icon img {
     margin: 20px auto; 
     max-width: 800px; 
 }
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 20px;
+    flex-direction: column;
+    background-color: #b71c1c; 
+}
 
+footer p{
+    color: #f0f0f0;
+    font-size: 1.1rem;
+}
 
-/* menu */
 .menu-block {
     margin: 0;    
     padding: 0; 
@@ -327,7 +332,6 @@ footer .social-icon img {
     border-radius: 8px; 
     object-position: center; 
 }
-
 .menu-title {
     text-align: center;
     font-size: 1.5rem;
@@ -351,7 +355,6 @@ footer .social-icon img {
     justify-content: center;
     margin-left: 0; 
 }
-
 /* Para telas com largura máxima de 1224px */
 @media (max-width: 1224px) {
     /* Define a largura dos blocos do menu para 31.33% menos 10px para espaços */
@@ -368,7 +371,7 @@ footer .social-icon img {
         width: 100%; 
         padding: 10px 0; 
     }
-    
+  
     /* Define uma margem vertical para os itens do menu */
     nav ul li {
         margin: 10px 0;
@@ -405,3 +408,85 @@ footer .social-icon img {
     }
 }
 
+=======
+footer .social-icon {
+    margin: 0 10px;
+}
+
+footer .social-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5%;
+}
+
+/* Para telas menores que 1200px (até 788px também) */
+@media (max-width: 1500px) {
+    .responsive-image {
+        display: none; /* Esconde a segunda imagem */
+    }
+}
+
+/* Para telas menores que 768px */
+@media (max-width: 1124px) {
+    header {
+        padding: 10px;
+        font-size: 16px;
+    }
+    nav ul li a {
+        font-size: 1rem;
+    }
+    nav ul {
+        align-items: center; 
+        flex-direction: column;
+    }
+
+    #home h1, #contato h1, #menu h1 {
+        font-size: 4em;
+    }
+
+    #home p, #contato p, #menu p {
+        font-size: 1.1em;
+    }
+
+    .fixed-image {
+        width: 80px;
+        height: 80px;
+        top: 10px;
+        left: 20px;
+    }
+}
+
+/* Para telas menores que 480px (500px incluído) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .telaindex{
+        width: 80px;
+        height: 80px;
+        top: 10px;
+        left: 20px;
+    }
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    nav ul li {
+        margin: 5px 0; 
+    }
+
+    #home h1, #contato h1, #menu h1 {
+        font-size: 3em;
+    }
+
+    #home p, #contato p, #menu p {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
+}
