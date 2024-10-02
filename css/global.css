@@ -5,7 +5,6 @@ body {
     box-sizing: border-box;
     background-color: #000000;
 }
-
 header {
     display: flex;
     justify-content: space-between;
@@ -14,15 +13,13 @@ header {
     backdrop-filter: blur(10px);
     padding: 10px 20px;
     z-index: 5;
-    position: relative; /* Necessário para o posicionamento do botão */
+    position: relative; 
 }
-
 .logo-img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
-
 nav ul {
     list-style: none;
     display: flex;
@@ -30,12 +27,10 @@ nav ul {
     padding: 0;
     justify-content: flex-end; 
 }
-
 nav ul li {
     margin-left: 20px;
     position: relative;
 }
-
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -43,16 +38,13 @@ nav ul li a {
     padding: 10px 15px;
     display: block;
     transition: background-color 0.3s ease; 
-    margin-left: 8.5rem;
-    margin-right: 8.5rem;
 }
-
-
 nav ul li a:hover {
     background-color: #ff5252; 
     border-radius: 5px; 
     text-decoration: none; 
 }
+
 
 .order-button {
     position: absolute;
@@ -72,17 +64,14 @@ nav ul li a:hover {
     transition: background-color 0.3s ease, transform 0.3s ease;
     z-index: 10; 
 }
-
 .order-button:hover {
     background-color: #ff5252; 
     transform: translateY(-50%) scale(1.05);
 }
-
 .order-button:active {
     background-color: #ff1744; 
     transform: translateY(-50%) scale(0.95); 
 }
-
 .titulo h1 {
     font-size: 36px;
     color: #b71c1c; 
@@ -90,76 +79,17 @@ nav ul li a:hover {
     margin: 20px 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
-
 .imagem img {
     height: 60rem;
     margin-top: -40px;
     display: flex;
 }
-
 .descricao {
     text-align: center;
     margin: 20px;
     font-size: 20px;
     color: #000000; 
 }
-
-.menu-section {
-    margin: 20px;
-    text-align: center;
-}
-
-.menu-title {
-    font-size: 40px;
-    color: #b71c1c; 
-    margin-bottom: 20px;
-}
-
-.menu-list {
-    padding: 20px;
-    background-color: #bea264; 
-    border-radius: 10px;
-}
-
-.menu-list h3 {
-    font-size: 24px;
-    color: #b71c1c; 
-}
-
-.menu-list li {
-    margin-bottom: 20px;
-    text-align: left;
-    display: flex;
-    align-items: center;
-}
-
-.menu-list li strong {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
-.menu-img {
-    width: 100px;
-    height: 100px;
-    margin-right: 15px;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out; 
-
-}
-.menu-img:hover {
-    transform: scale(1.1);
-}
-
-.menu-block {
-    background-color: #f9f9f9; 
-    border: 2px solid #333; 
-    padding: 20px; 
-    border-radius: 10px; 
-    max-width: 800px; 
-    margin: 0 auto; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
 .contact-section {
     display: flex;
     justify-content: space-between;
@@ -172,7 +102,6 @@ nav ul li a:hover {
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
-
 .form-block, 
 .map-container {
     flex: 1;
@@ -189,7 +118,6 @@ nav ul li a:hover {
     padding: 40px;
     position: relative;
 }
-
 .form-block::before {
     content: "";
     position: absolute;
@@ -201,13 +129,11 @@ nav ul li a:hover {
     border-radius: 15px;
     z-index: 1; 
 }
-
 .contact-form {
     position: relative;
     z-index: 2;
     max-width: 100%;
 }
-
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -220,14 +146,12 @@ nav ul li a:hover {
     transition: all 0.3s ease;
     background-color: #fafafa;
 }
-
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: #b71c1c;
     box-shadow: 0 0 8px rgba(183, 28, 28, 0.4);
     background-color: #fff;
 }
-
 .contact-form button {
     width: 100%;
     padding: 15px;
@@ -240,7 +164,6 @@ nav ul li a:hover {
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
 .contact-form button:hover {
     background-color: #d32f2f;
     box-shadow: 0 5px 10px rgba(211, 47, 47, 0.3);
@@ -256,7 +179,29 @@ nav ul li a:hover {
     text-decoration: underline;
     color: #d32f2f;
 }
-
+.map-container a {
+    display: inline-block;
+    font-size: 18px;
+    color: #b71c1c;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+=======
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #b71c1c; 
+    padding: 10px 0;
+}
+footer .social-icon {
+    margin: 0 10px;
+}
+footer .social-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+=======
 /* Estilo para setas de navegação */
 .navigation-arrows {
     display: flex;
@@ -264,7 +209,6 @@ nav ul li a:hover {
     margin-top: 20px;
     margin-bottom: 15px;
 }
-
 .navigation-arrows-index {
     display: flex;
     justify-content: space-between;
@@ -272,7 +216,6 @@ nav ul li a:hover {
     margin-bottom: 15px;
     margin-left: 109rem;
 }
-
 .arrow {
     text-decoration: none;
     font-size: 1.5rem; 
@@ -283,14 +226,12 @@ nav ul li a:hover {
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .arrow:hover {
     background-color: #b71c1c;
     color: #fff; 
     transform: scale(1.05); 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-
 .menu-list h3 {
     font-size: 40px;
     border-bottom: 3px solid #b71c1c;
@@ -300,7 +241,6 @@ nav ul li a:hover {
     max-height:10rem;
     border-radius: 50%;
 }
-
 .menu-title {
     margin: 0 0 20px 0; 
     font-size: 2em; 
@@ -312,7 +252,6 @@ nav ul li a:hover {
     margin: 20px auto; 
     max-width: 800px; 
 }
-
 .title-contact {
     margin: 0 0 20px 0; 
     font-size: 2em; 
@@ -339,6 +278,137 @@ footer p{
     font-size: 1.1rem;
 }
 
+.menu-block {
+    margin: 0;    
+    padding: 0; 
+    text-align: center; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    padding: 15px; 
+    margin: 5px;
+    width: calc(24% - 10px); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    text-align: justify;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1rem; 
+}
+.menu-block:hover {
+    transform: scale(1.03);   
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+.menu-block h2 {
+    color: #9A1915;
+    font-size: 1.5em; 
+    text-align: center;
+    background-color: rgb(236, 226, 226);
+}
+.menu-block p {
+    font-size: 1.3em; 
+    line-height: 1.5; 
+
+}
+.title-container {
+    background-color: rgb(236, 226, 226); 
+    padding: 10px 15px; 
+    border-radius: 8px; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+.title-container h1 {
+    color: #333;   
+    font-size: 1.8em;     
+    margin: 0;            
+    font-weight: bold;      
+}
+.imagem-menu {
+    display: block; 
+    margin: 0 auto; 
+    width: 100%; 
+    height: 250px; 
+    max-width: 250px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    object-position: center; 
+}
+.menu-title {
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #b71c1c;
+    color: rgb(236, 226, 226);
+}
+.cardapio {
+    font-size: 2.5rem; 
+    text-align: center; 
+    color: #cc4242; 
+    background-color: #f9f9f9;
+    padding: 20px; 
+    border-radius: 10px; 
+    max-width: 1150px; 
+    margin: 20px auto 0; 
+}
+.text-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+    margin-left: 0; 
+}
+/* Para telas com largura máxima de 1224px */
+@media (max-width: 1224px) {
+    /* Define a largura dos blocos do menu para 31.33% menos 10px para espaços */
+    .menu-block {
+        width: calc(31.33% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    /* Muda a direção do menu de navegação para coluna e centraliza os itens */
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+        padding: 10px 0; 
+    }
+  
+    /* Define uma margem vertical para os itens do menu */
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Remove margens dos links e centraliza o texto */
+    nav ul li a {
+        margin: 0; 
+        width: 100%; /* Faz com que os links ocupem a largura total */
+        text-align: center; 
+    }
+
+    /* Ajusta o tamanho da imagem do logo para um tamanho menor */
+    .logo-img {
+        width: 80px; 
+        height: 80px; 
+    }
+
+    /* Define a largura dos blocos do menu para 48% menos 10px para espaços */
+    .menu-block {
+        width: calc(48% - 10px); 
+    }
+}
+
+@media (max-width: 600px) {
+    /* Reduz o tamanho da fonte dos links do menu para melhorar a legibilidade em telas menores */
+    nav ul li a {
+        font-size: 18px; 
+    }
+
+    /* Faz os blocos do menu ocuparem 100% da largura da tela */
+    .menu-block {
+        width: 100%; 
+    }
+}
+
+=======
 footer .social-icon {
     margin: 0 10px;
 }
