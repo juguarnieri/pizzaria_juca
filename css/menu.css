@@ -1,0 +1,7 @@
+    .container {
+        background-repeat: no-repeat;
+        margin-top: 5rem;
+        min-height: calc(100vh - 100px); 
+        padding-bottom: 20px; 
+        background-size: cover;
+    }
