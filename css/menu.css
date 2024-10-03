@@ -1,7 +1,9 @@
+:root {
+    --bg-color: #000000;
+    --geral-color: #b71c1c;
+    --text-color: #e4e4e4;
+}
     .container {
-        background-repeat: no-repeat;
-        margin-top: 5rem;
-        min-height: calc(100vh - 100px); 
-        padding-bottom: 20px; 
-        background-size: cover;
+        background-color: var(--bg-color);
+        background-image: none;
     }
