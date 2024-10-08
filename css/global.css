@@ -379,8 +379,7 @@ footer p{
 
     /* Remove margens dos links e centraliza o texto */
     nav ul li a {
-        margin: 0; 
-        width: 100%; /* Faz com que os links ocupem a largura total */
+        margin: 0;  /* Faz com que os links ocupem a largura total */
         text-align: center; 
     }
 
