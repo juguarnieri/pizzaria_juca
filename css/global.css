@@ -350,12 +350,10 @@ footer p{
     padding: 20px; 
     border-radius: 10px; 
     max-width: 1150px; 
-    margin: 20px auto 0; 
 }
 .text-menu {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
     justify-content: center;
     margin-left: 0; 
 }
@@ -375,17 +373,16 @@ footer p{
         width: 100%; 
         padding: 10px 0; 
     }
-
-
     /* Remove margens dos links e centraliza o texto */
     nav ul li a {
         margin: 0;  /* Faz com que os links ocupem a largura total */
         text-align: center; 
     }
-
-    /* Define a largura dos blocos do menu para 48% menos 10px para espaços */
+    .text-menu  {
+        align-items: center;
+    }
     .menu-block {
-        width: calc(48% - 10px); 
+        width: 80%;
     }
 }
 
@@ -498,6 +495,8 @@ footer .social-icon img {
         min-height: calc(100vh - 100px); 
         padding-bottom: 20px; 
         background-size: cover;
+        background-position: 50%;
+        background-size: 100%;
     }
     nav ul {
         flex-direction: column; 
